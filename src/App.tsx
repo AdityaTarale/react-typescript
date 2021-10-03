@@ -1,15 +1,7 @@
 import "./App.css";
-import { User } from "./components/context/User";
-import { UserContextProvider } from "./components/context/UserContext";
 
 function App() {
-  return (
-    <div className="App">
-      <UserContextProvider>
-        <User />
-      </UserContextProvider>
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;
