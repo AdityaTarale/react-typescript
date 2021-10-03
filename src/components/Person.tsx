@@ -1,11 +1,5 @@
 import React from "react";
-
-type PersonProps = {
-  name: {
-    firstName: string;
-    lastName: string;
-  };
-};
+import { PersonProps } from "./Person.types"; // importing types from other files
 
 export const Person = (props: PersonProps) => {
   return (
