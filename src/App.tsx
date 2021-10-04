@@ -1,18 +1,18 @@
 import "./App.css";
-import { CustomButton } from "./components/html/Button";
-import { CustomInput } from "./components/html/Input";
+import { Text } from "./components/polymorphic/Text";
 
 function App() {
   return (
     <div className="App">
-      <CustomButton
-        variant="primary"
-        type="submit"
-        onClick={() => console.log("Clicked")}
-      >
-        Primary Button
-      </CustomButton>
-      <CustomInput />
+      <Text as="h1" size="lg">
+        Heading
+      </Text>
+      <Text as="p" size="md">
+        Paragraph
+      </Text>
+      <Text as="label" htmlFor="someId" size="sm" color="primary">
+        Label
+      </Text>
     </div>
   );
 }
