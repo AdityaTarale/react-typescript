@@ -17,5 +17,5 @@ export const Private = ({ isLoggedIn, component: Component }: PrivateProps) => {
 
 /**
  * If you have to pass component as props use React.ComponentType,
- * and If that component it self accept props use React.Component<PropTypes> in angle brackets
+ * and If that component it self accept props use React.ComponentType<PropTypes> in angle brackets
  */
