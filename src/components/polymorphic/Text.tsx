@@ -21,3 +21,8 @@ export const Text = <E extends React.ElementType = "div">({ // default element t
     <Component className={`class-with-${size}-${color}`}>{children}</Component>
   );
 };
+
+// Why we use omit here?
+// explaination
+// TextOwnProps<E> type has a key as children,
+// and React.ComponentProps<E> type has a key as children also, so to avoid for duplicate keys/name collision, we use omit
